@@ -10,6 +10,7 @@ enum34==1.1.6
 feedparser==5.2.1
 Flask==0.12.3
 Flask-Bcrypt==0.7.1
+Flask-Login==0.4.1
 Flask-Migrate==2.1.0
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.2
