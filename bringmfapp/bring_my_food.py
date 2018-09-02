@@ -10,9 +10,9 @@ from mockdbhelper import MockDBHelper as DBHelper
 from user import User
 from passwordhelper import PasswordHelper
 
-from flask.ext.login import login_required
-from flask.ext.login import login_user
-from flask.ext.login import logout_user
+from flask_login import login_required
+from flask_login import login_user
+from flask_login import logout_user
 
 
 DB = DBHelper()
@@ -65,9 +65,16 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/dashboard")
+@login_required
+def dashboard():
+    return render_template("dashboard.html")
+   
 @app.route("/account")
 @login_required
 def account():
-    return "You are logged in"
+    return render_template("account.html")
+
+
 
 

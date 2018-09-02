@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from flask.ext.login import LoginManager
+from flask_login import LoginManager
 
 # Initialize application
 app = Flask(__name__, static_folder='static')
