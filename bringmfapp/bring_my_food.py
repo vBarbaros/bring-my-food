@@ -76,7 +76,8 @@ def dashboard():
 @app.route("/account")
 @login_required
 def account():
-    return render_template("account.html")
+    tables = DB.get_tables(current_user.get_id())
+    return render_template("account.html", tables=tables)
 
 
 @app.route("/account/createtable", methods=["POST"])
