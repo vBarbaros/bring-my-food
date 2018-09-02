@@ -89,6 +89,12 @@ def account_createtable():
     DB.update_table(tableid, new_url)
     return redirect(url_for('account'))
 
+@app.route("/account/deletetable")
+@login_required
+def account_deletetable():
+    tableid = request.args.get("tableid")
+    DB.delete_table(tableid)
+    return redirect(url_for('account'))
 
 
 
