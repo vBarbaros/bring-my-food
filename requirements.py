@@ -15,6 +15,7 @@ Flask-Migrate==2.1.0
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.2
 Flask-Testing==0.6.2
+Flask-WTF==0.14.2
 ForgeryPy==0.1
 gunicorn==19.9.0
 idna==2.7
@@ -36,3 +37,4 @@ six==1.10.0
 SQLAlchemy==1.1.13
 tzlocal==1.5.1
 Werkzeug==0.12.2
+WTForms==2.2.1
