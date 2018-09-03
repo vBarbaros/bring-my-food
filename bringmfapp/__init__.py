@@ -8,10 +8,3 @@ login_manager = LoginManager(app)
 
 # Import the application views
 from bringmfapp import bring_my_food
-from bringmfapp import config
-from bringmfapp import bitlyhelper
-from bringmfapp import dbhelper
-from bringmfapp import forms
-from bringmfapp import mockdbhelper
-from bringmfapp import passwordhelper
-from bringmfapp import user

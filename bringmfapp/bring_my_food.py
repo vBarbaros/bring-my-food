@@ -1,7 +1,7 @@
 from bringmfapp import app
 from bringmfapp import login_manager
 #from bitlyhelper import BitlyHelper
-import BitlyHelper
+import bitlyhelper
 from forms import RegistrationForm
 from forms import LoginForm
 from forms import CreateTableForm
@@ -29,7 +29,7 @@ else:
 DB = DBHelper()
 app.secret_key = 'WcYEKV0r1QTOAEa+a0AAJKwMc3c5v+pPgNu1CbgwpV7p3cZklgtpf17lqdkVnB9UeEcmD4NhVRctwPFYfnfan4K8wnxlNWPLPgeY'
 PH = PasswordHelper()
-BH = BitlyHelper()
+BH = bitlyhelper.BitlyHelper()
 
 
 @login_manager.user_loader
