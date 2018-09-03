@@ -4,7 +4,6 @@ from bitlyhelper import BitlyHelper
 from forms import RegistrationForm
 from forms import LoginForm
 from forms import CreateTableForm
-from mockdbhelper import MockDBHelper as DBHelper
 from passwordhelper import PasswordHelper
 from user import User
 
@@ -21,6 +20,10 @@ from flask_login import current_user
 import config
 import datetime
 
+if config.use_mockDB:
+    from mockdbhelper import MockDBHelper as DBHelper
+else: 
+    from dbhelper import DBHelper
 
 DB = DBHelper()
 app.secret_key = 'WcYEKV0r1QTOAEa+a0AAJKwMc3c5v+pPgNu1CbgwpV7p3cZklgtpf17lqdkVnB9UeEcmD4NhVRctwPFYfnfan4K8wnxlNWPLPgeY'
@@ -98,7 +101,7 @@ def account_createtable():
     form = CreateTableForm(request.form)
     if form.validate():
         tableid = DB.add_table(form.tablenumber.data, current_user.get_id())
-        new_url = BH.shorten_url(config.base_url + "newrequest/" + tableid)
+        new_url = BH.shorten_url(config.base_url + "newrequest/" + str(tableid))
         DB.update_table(tableid, new_url)
         return redirect(url_for('account'))
     return render_template("account.html", createtableform=form, tables=DB.get_tables(current_user.get_id()))
