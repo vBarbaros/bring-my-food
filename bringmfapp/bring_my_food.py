@@ -1,6 +1,7 @@
 from bringmfapp import app
 from bringmfapp import login_manager
-from bitlyhelper import BitlyHelper
+#from bitlyhelper import BitlyHelper
+import BitlyHelper
 from forms import RegistrationForm
 from forms import LoginForm
 from forms import CreateTableForm
