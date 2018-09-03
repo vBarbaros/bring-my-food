@@ -1,5 +1,5 @@
 use_on_heroku = False
-use_mockDB = False
+use_mockDB = True
 base_url = ''
 
 
