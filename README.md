@@ -23,9 +23,25 @@
 
 ### Landing Page
 
-![Home Page](crimemap-screenshots/crimemap-home.png)
+![Home Page](bringmf-screenshots-screenshots/01-home.png)
 
-### [Development](https://github.com/vBarbaros/crimemap/blob/dev/CONTRIBUTING.md)
+### Account Page
+
+![Once Logged In, Access Your Account](bringmf-screenshots-screenshots/02-account.png)
+
+### Account Page - New Request Created
+
+![From Your Account and Generate Your Request](bringmf-screenshots-screenshots/03-account-newrequest.png)
+
+### Account Page - Send New Request
+
+![Use the Obfuscated Url to Send Your Request](bringmf-screenshots-screenshots/04-send-request.png)
+
+### Dashboard Page
+
+![Track the Progress of Your Request](bringmf-screenshots-screenshots/05-dashboard-track-request.png)
+
+### [Development](https://github.com/vBarbaros/bring-my-food/blob/dev/CONTRIBUTING.md)
 Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
@@ -40,33 +56,31 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ### Bug / Feature Request
 
-If you find a bug kindly open an issue [here](https://github.com/vBarbaros/crimemap/issues/new) by including the steps to reproduce it.
+If you find a bug kindly open an issue [here](https://github.com/vBarbaros/bring-my-food/issues/new) by including the steps to reproduce it.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/vBarbaros/crimemap/issues/new).
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/vBarbaros/bring-my-food/issues/new).
 
 
 ## Built with 
 
 - [Flask](http://flask.pocoo.org/docs/1.0/) - Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed!.
 
-- [Google Maps Platform](https://cloud.google.com/maps-platform/maps/) - Welcome to Google Maps Platform. Explore where real-world insights and immersive location experiences can take your business.
 
 ## Credits
 
 - The Book [Flask: Building Python Web ServicesGareth Dwyer, Shalabh Aggarwal, Jack Stouffer](https://www.packtpub.com/web-development/flask-building-python-web-services) While using the tutorials described in this book, I made the following improvement:
 	1) adapted the overall architecture of the current Flask webapp to a more reusable one;
-	2) adapted the app to use the free version of the Google Maps API;
-	3) added a mock-database, to make it usable and deployable on Heroku;
-	4) prepared the necesary files to make it deployable to Heroku in seconds!!!
+	2) added a mock-database, to make it usable and deployable on Heroku (but with a locally installed MongoDB, it works fine with the real DB);
+	3) prepared the necesary files to make it deployable to Heroku in seconds!!!
 
 ## To-do
 - Add Unit Tests;
 - Add CI using Travis CI;
 - Improve upon app's architecture, using templates and styling;
-- Integrate the app with a real MySQL DataBase, directly on Heroku (with a locally installed mysql DB, it works fine, though);
+- Integrate the app with a real MongoDB DataBase, directly on Heroku (with a locally installed MongoDB, it works fine, though);
 - (...to be added, there is always stuff that can be added);
 
 
-## [License](https://github.com/vBarbaros/crimemap/blob/dev/LICENSE)
+## [License](https://github.com/vBarbaros/bring-my-food/blob/dev/LICENSE)
 
 MIT © [Victor Barbaros](https://github.com/vBarbaros)
