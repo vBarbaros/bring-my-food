@@ -23,23 +23,23 @@
 
 ### Landing Page
 
-![Home Page](bringmf-screenshots-screenshots/01-home.png)
+![Home Page](bringmf-screenshots/01-home.png)
 
 ### Account Page
 
-![Once Logged In, Access Your Account](bringmf-screenshots-screenshots/02-account.png)
+![Once Logged In, Access Your Account](bringmf-screenshots/02-account.png)
 
 ### Account Page - New Request Created
 
-![From Your Account and Generate Your Request](bringmf-screenshots-screenshots/03-account-newrequest.png)
+![From Your Account and Generate Your Request](bringmf-screenshots/03-account-newrequest.png)
 
 ### Account Page - Send New Request
 
-![Use the Obfuscated Url to Send Your Request](bringmf-screenshots-screenshots/04-send-request.png)
+![Use the Obfuscated Url to Send Your Request](bringmf-screenshots/04-send-request.png)
 
 ### Dashboard Page
 
-![Track the Progress of Your Request](bringmf-screenshots-screenshots/05-dashboard-track-request.png)
+![Track the Progress of Your Request](bringmf-screenshots/05-dashboard-track-request.png)
 
 ### [Development](https://github.com/vBarbaros/bring-my-food/blob/dev/CONTRIBUTING.md)
 Want to contribute? Great!
